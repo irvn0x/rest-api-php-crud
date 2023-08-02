@@ -10,7 +10,6 @@ include 'function.php';
 $requestMethod = $_SERVER['REQUEST_METHOD'];
 
 if ($requestMethod == 'DELETE') {
-
   $deletePlayer = deletePlayer($_GET);
   echo $deletePlayer;
 } else {

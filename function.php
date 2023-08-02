@@ -29,7 +29,7 @@ function getPlayerList()
 
       $data = [
         'status'  => 200,
-        'message' => 'Success Player List Fetched',
+        'message' => 'Success player list fetched',
         'data'    => $res
       ];
 
@@ -38,7 +38,7 @@ function getPlayerList()
     } else {
       $data = [
         'status'  => 404,
-        'message' => 'Player Not Found!'
+        'message' => 'Player not found'
       ];
 
       header('HTTP/1.0 404 Player Not Found');
@@ -47,7 +47,7 @@ function getPlayerList()
   } else {
     $data = [
       'status'  => 500,
-      'message' => 'Internal Server Error!'
+      'message' => 'Internal server error'
     ];
 
     header('HTTP/1.0 505 Internal Server Error!');
@@ -75,7 +75,7 @@ function getPlayerbyId($playerParams)
 
       $data = [
         'status'  => 200,
-        'message' => 'Success Player List Fetched',
+        'message' => 'Success player list fetched',
         'data'    => $res
       ];
 
@@ -84,7 +84,7 @@ function getPlayerbyId($playerParams)
     } else {
       $data = [
         'status'  => 404,
-        'message' => 'Player Not Found'
+        'message' => 'Player not found'
       ];
 
       header('HTTP/1.0 404 Not Found');
@@ -93,7 +93,7 @@ function getPlayerbyId($playerParams)
   } else {
     $data = [
       'status'  => 500,
-      'message' => 'Internal Server Error!'
+      'message' => 'Internal server error'
     ];
 
     header('HTTP/1.0 505 Internal Server Error!');
@@ -135,7 +135,7 @@ function storePlayer($playerInput)
 
       $data = [
         'status'  => 201,
-        'message' => 'Player Created 😁'
+        'message' => 'Player created'
       ];
 
       header('HTTP/1.0 201 Created');
@@ -143,7 +143,7 @@ function storePlayer($playerInput)
     } else {
       $data = [
         'status'  => 500,
-        'message' => 'Internal Server Error!'
+        'message' => 'Internal server error'
       ];
 
       header('HTTP/1.0 505 Internal Server Error!');
@@ -194,7 +194,7 @@ function updatePlayer($playerInput, $playerParams)
 
       $data = [
         'status'  => 200,
-        'message' => 'Player Updated 😁'
+        'message' => 'Player updated'
       ];
 
       header('HTTP/1.0 200 Success');
@@ -202,7 +202,7 @@ function updatePlayer($playerInput, $playerParams)
     } else {
       $data = [
         'status'  => 500,
-        'message' => 'Internal Server Error!'
+        'message' => 'Internal server error'
       ];
 
       header('HTTP/1.0 505 Internal Server Error!');
@@ -238,7 +238,7 @@ function deletePlayer($playerParams)
   } else {
     $data = [
       'status'  => 404,
-      'message' => 'Player Not Found'
+      'message' => 'Player not found in url'
     ];
 
     header('HTTP/1.0 404 Not Found');
